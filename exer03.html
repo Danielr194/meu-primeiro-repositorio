@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exer03</title>
+</head>
+<body>
+    quantidade de chocolate comprados: <input id="input_qtdChoc"><br>
+    <button onclick="desconto()">Compra</button>
+    <div id="desc_choc"></div>
+</body>
+</html>
+<script>
+    function desconto() {
+        var chocolate = Number(input_qtdChoc.value)
+        if (chocolate < 12) {
+            var calc = chocolate * 3
+            desc_choc.innerHTML = `o valor da sua compra foi de ${calc}`
+        }
+        else
+            var calc = chocolate * 2.50 
+            desc_choc.innerHTML = `o valor da sua compra foi de ${calc}`
+            
+    }
+</script>

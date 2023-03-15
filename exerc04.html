@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exer04</title>
+</head>
+<body>
+    <img src="" alt="">
+    Frequencia do aluno<input id="input_freq"><br>
+    <button onclick="frequencia()"> 
+        Analisar frequência</button>
+    <div id="div_Analisar"> </div>
+</body>
+</html>
+<script>
+    function frequencia() {
+        var freq = Number(input_freq.value)
+        if (freq < 50) {
+            div_Analisar.innerHTML = `<img src="https://cdn.w600.comps.canstockphoto.com.br/turista-desenho_csp21014496.jpg" alt="turista">`
+        }
+        else
+             div_Analisar.innerHTML = `<img src="https://media.gazetadopovo.com.br/2017/08/298e8518ba6191db012724dad7d52bab-gpMedium.jpg" alt="estudioso">`    
+    }
+</script>
