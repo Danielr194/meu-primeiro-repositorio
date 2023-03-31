@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id='exi'>
+    <img src="./manoelgomes.webp" alt="manoelgomes" width="267"></div>
+    <button onclick="aumentar()">Aumentar largura</button>
+    <button onclick="reduzir()">reduzir largura</button><br>
+    
+</body>
+</html>
+<script>
+    var tamanho= 267
+    function aumentar(){
+         tamanho += 10
+         exi.innerHTML = `<img src="./manoelgomes.webp" alt="manoelgomes" width="${tamanho}"><br>`
+    }
+    function reduzir() {
+        tamanho -=10
+        exi.innerHTML = `<img src="./manoelgomes.webp" alt="manoelgomes" width="${tamanho}"><br>`
+    }
+</script>
