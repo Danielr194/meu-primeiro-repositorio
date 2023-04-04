@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Inserir fruta:<input  id="input_fruta"><br>
+    <button onclick="resultado()">Vai comer?</button>
+    <div id="exibicao"></div>
+</body>
+</html>
+<script>
+    function resultado() {
+        var fruta = input_fruta.value
+        if (fruta == 'uva' || fruta == 'abacaxi'){
+            exibicao.innerHTML= `Sim, vai comer ${fruta}`
+        } else {
+            exibicao.innerHTML = `A fruta ${fruta} ela não come`
+        }
+    }
+</script>

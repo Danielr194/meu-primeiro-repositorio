@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Altura inicial: <input  id="input_inici">
+    Altura final: <input id="input_fim"><br><br>    
+    Nome do candidato: <input  id="input_nome"> 
+    Altura do candidato: <input  id="input_altura"><br>
+    <button onclick="analisar()"> Analisar </button>
+    <div id="exibicao"></div>
+</body>
+</html>
+<script>
+    function analisar() {
+        var Alt_inicial = Number(input_inici.value)
+        var Alt_fim = Number(input_fim.value)
+        var Nome = input_nome.value
+        var Alt_cand = Number(input_altura.value)
+        if (Alt_inicial > 1 && Alt_fim > Alt_inicial) {
+            if(Alt_cand >=  Alt_inicial && Alt_cand <= Alt_fim) {
+            exibicao.innerHTML = `O candidato ${Nome} com altura de ${Alt_cand} participará do processo de seleção de piloto`
+        } else {
+            exibicao.innerHTML = `Infelizmente o candidato ${Nome} com altura de ${Alt_cand} não atende os requisitos`}
+    } else {
+        exibicao.innerHTML = `NÃO SEGUIR EM FRENTE. 
+
+`
+    }
+        }
+
+</script>

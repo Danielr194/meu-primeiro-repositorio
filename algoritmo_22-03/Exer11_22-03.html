@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Quantidade de passagem: <input  id="input_qtdPassa"><br>
+    <button onclick="compra()"> Comprar</button>
+    <div id="exibicao"></div>
+</body>
+</html>
+<script>
+    function compra() {
+        var qtd = Number(input_qtdPassa.value)
+        var calc = qtd * 4.40
+        if (qtd >= 8 && qtd <= 50  ){
+            if (qtd >= 8 && qtd <=19) {
+                var por = calc *0.03
+                exibicao.innerHTML = `total a pagar ${por }`
+            }else if (qtd >= 20 && qtd <= 49) {
+                var por = calc * 0.05
+                exibicao.innerHTML = `total a pagar ${por}`
+            }else if (qtd > 50){
+                var por = calc * 0.07
+                exibicao.innerHTML = `total a pagar ${por}`
+            }
+        }
+    }
+</script>

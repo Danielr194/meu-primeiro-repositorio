@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exer02</title>
+</head>
+<body>
+    saldo da conta<input id="input_saldo"><br>
+    valor do debito<input id="input_debito"><br>
+    <button onclick="analisar()">
+        Analisar conta</button>
+    <div id="saldo_conta"></div>
+</body>
+</html>
+<script>
+    function analisar() {
+        var conta = Number(input_saldo.value)
+        var debito = Number(input_debito.value)
+        var calc = conta - debito
+        if (calc < 0) {
+            saldo_conta.innerHTML = `<b style='color:red'> o saldo atual da conta corrente é ${calc}`
+        }
+        else
+            saldo_conta.innerHTML = `<i style = 'color:blue '>o saldo atual da conta corrente é ${calc}`
+    }
+</script>

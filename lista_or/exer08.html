@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Empresa de preferencias</h1>
+    Nome da empresa:<input id="input_nome"><br>
+    Bolsa da empresa:<input id="input_empresa"><br>
+    VR da empresa:<input id="input_VR"><br>
+    Tempo de descolameto:<input id="input_desco"><br>
+    <button onclick="avaliar()">
+        É preferida?</button>
+    <div id="exibicao"></div>
+</body>
+</html>
+<script>
+    function avaliar() {
+        var empresa = input_nome.value
+        var bolsa = Number(input_empresa.value)
+        var vr = Number(input_VR.value)
+        var tempo = Number(input_desco.value)
+        if (bolsa >= 1800 || vr >= 20 || tempo <= 30 ){
+            exibicao.innerHTML=`A empresa ${empresa} é uma de suas preferências`
+        } else{
+            exibicao.innerHTML = `A empresa ${empresa} está fora da sua lista`
+        }
+    }
+</script>
