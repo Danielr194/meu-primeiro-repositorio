@@ -1,0 +1,63 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="exibicao" style="color: blue;">
+        Total guardado no cofrinho: R$0
+        <br>Depósitos efetuados: 0
+        <br>Retiradas efetuadas: 0</div><br>
+        Retirar valor expecifico:<input id="input_retirar"><br><br>
+    <button onclick="Deposito1()">Depositar 0,50</button>
+    <button onclick="Deposito2()">Depositar 2,00</button>
+    <button onclick="Retirar1()">Retirar 0,50</button>
+    <button onclick="Retirar()">Retirar</button>
+    
+</body>
+</html>
+<script>
+   var Total_guardado = 0
+   var Depositor = 0
+    var retirados = 0
+    var ex_retirar = 0
+    var desafio = ""
+    function Deposito1() {
+        Total_guardado = Total_guardado + 0.50
+        Depositor = Depositor + 1
+        desafio = desafio + '!'
+        exibicao.innerHTML = `Total guardado no cofrinho: R$${Total_guardado}
+        <br>Depósitos efetuados:${Depositor}
+        <br>Retiradas efetuadas: 0 `
+    }
+    function Deposito2() {
+        Total_guardado = Total_guardado + 2
+        Depositor = Depositor + 1
+        desafio = desafio + '@'
+        exibicao.innerHTML = `Total guardado no cofrinho: R$${Total_guardado}
+        <br>Depósitos efetuados:${Depositor}
+        <br>Retiradas efetuadas: 0 `
+    }
+    function Retirar1(){
+        Total_guardado = Total_guardado - 0.50
+        retirados = retirados + 1
+        exibicao.innerHTML = `Total guardado no cofrinho: R$${Total_guardado}
+        <br>Depósitos efetuados:${Depositor}
+        <br>Retiradas efetuadas: ${retirados} `
+    }
+    function Retirar() {
+        if (desafio.lastIndexOf('!') == '!' ){
+            desafio-= '!'
+            Total_guardado -= 0.50
+        }else if(desafio.lastIndexOf('@') == '@'){
+            desafio -= '@'
+            Total_guardado -= 2 
+        }
+        exibicao.innerHTML = `Total guardado no cofrinho: R$${Total_guardado}
+        <br>Depósitos efetuados:${Depositor}
+        <br>Retiradas efetuadas: ${retirados} `
+    }
+
+</script>
