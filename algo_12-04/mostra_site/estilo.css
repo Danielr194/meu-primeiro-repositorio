@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Quando&display=swap');
+
+body {
+    background-color: rgb(34, 34, 34);
+    color: white;
+    font-family: 'Quando', serif;
+    margin: 0 ;
+   
+    
+}
+.header{
+    display: flex;
+    border-bottom: 2px solid #0077be  ;
+}
+.container{
+    width: 100%;
+    margin: auto;
+    display: flex;
+}
+
+.header .container {
+    justify-content: space-between;
+    align-items: center;
+}
+.header a {
+    text-decoration: none;
+    color: white;
+}
+.titulo h1{
+    display: flex;
+    text-align: center;
+    margin-left: 40px ;
+    font-weight: bolder;
+    font-size: 23px;
+}
+.navbar{
+    width: 500px;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+    padding-right: 12px;
+}
+
+ .agora{
+    font-weight: 3000px;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
+    padding: 10px;
+    justify-content: space-evenly;
+}
+
+.frase{
+    display: flex;
+    font-size: 23px;
+    text-align: center;
+    justify-content: space-evenly;
+    height: 200px;
+    margin-top: 50px;
+}
+.imagem{
+    display: flex;
+    
+}
+
+.sobrenos{
+    display: flex;
+    margin-top: 120px;
+    font-size: 22px;
+    margin-left: 15px;
+    line-height: 1px;
+}
+.texto_sobrenos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+.texto_sobrenos p{
+    display: flex;
+    line-height: 20px;
+    max-width: 4500px;
+    text-align: left;
+    font-size: 18px;
+    margin-left: 15px;
+}
+
+.produto{
+    display: flex;
+    margin-top: 70px;
+    flex-direction: column;
+    margin-left: 15px;
+}
+
+.produto h2{
+    display: flex;
+    font-size: 35px;
+}
+.produto p{
+    display: flex;
+    max-width: 80000000px;
+    text-align: left;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+}
+.info h2{
+    display: flex;
+    margin-top: 90px;
+    justify-content: center;
+}
+.nome_infor{
+    display: flex;
+    flex-direction: column;
+
+}
+.info2{
+    display: flex;
+    width: 500px;
+    height: 19px;
+    flex-direction: row;
+}
+
+.footer{
+    display: flex;
+    margin-top: 50px;
+    border-top: 2px solid #0077be  ;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+
+.contato {
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    text-decoration: none;
+    text-align: justify;
+    color: white;
+
+}
+.central{
+    font-size: 20px;
+
+}
+
+.final a {
+    text-decoration: none;
+    color: #0077be;
+    margin: 0px
+}
+
+ .imagem3 {
+    display: flex;
+    align-items: center;
+    width: 0px;
+    margin-left: 410px;
+   
+}
+
+.endereco {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
