@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    insira sua idade:<input type="text" id="input_idade"><br>
+    <button onclick="fases()">fase na vida
+    </button>
+    <div id="exibicao"></div>
+</body>
+</html>
+<script>
+    function fases() {
+        var fases = Number(input_idade.value)
+        var cont = 0
+        while (cont <= fases){
+            if(cont <= 4){
+                exibicao.innerHTML += `${cont} anos (Primeira Infância) <br>`
+            }
+            if(cont >= 5 && cont <= 6 ){
+                exibicao.innerHTML += `${cont} anos ( Pré-escolar) <br>`
+            }
+            if(cont >=7 && cont<=10){
+                exibicao.innerHTML += `${cont} anos ( Segunda Infância) <br>`
+            }
+            if (cont >= 11 && cont <= 18){
+                exibicao.innerHTML += `${cont} anos ( Adolescência) <br>`
+            }
+            if(cont >= 19 && cont <=50){
+                exibicao.innerHTML += `${cont} anos (Adulto) <br>`
+            }
+            if(cont >= 51 && cont <=100){
+                exibicao.innerHTML += `${cont} anos (Melhor idade) <br>`
+            }
+            if(cont >=101){
+                exibicao.innerHTML += `${cont} anos (Matusalém) <br>`
+            }
+        cont += 1
+        }
+
+    }
+</script>

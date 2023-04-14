@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    digite a tabuada que você quer ver (2 a 9): <select name="tabuada" id="select_tabuada">
+        <option value="2">2</option>
+        <option value="3" >3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+      </select><br>
+    digite ate que numero vai a tabuada: <input type="text" id="input_num"><br>
+    <button onclick="tabuada()">Ver tabuada</button>
+    <div id="exibicao"></div>
+</body>
+</html>
+<script>
+    function tabuada() {
+        var tabuada =Number(select_tabuada.value)
+        var limite = Number(input_num.value)
+        var cont = 0
+        while (cont <= limite){
+            if (cont % 2 == 0){
+                exibicao.innerHTML += ` <span style="color: blue;">${tabuada} x   ${cont} = ${tabuada * cont} <br> </span>`
+            }
+            if (cont % 2 != 0){
+                exibicao.innerHTML += `<span style="color: red;" >${tabuada} x  ${cont} = ${tabuada * cont} <br> </span>`   
+            }
+            
+            cont +=1
+        }
+    }
+    
+</script>
