@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Bairro onde morou:<input type="text" id="input_bairro"><br>
+    Numero da casa: <input type="text" id="input_num"><br>
+    <button onclick="cadastrar()">Cadastrar bairro</button><br>
+    <button onclick="relembrar()">Relembrar moradia</button><br>
+    <div id="exibir"></div>
+</body>
+</html>
+<script>
+    var moradia = []
+    var bairro = ''
+    function cadastrar() {
+        exibir.innerHTML += ``
+        bairro = input_bairro.value
+        moradia.push(bairro)
+        exibir.innerHTML += `Bairro adicionado <br>`
+    }
+    function relembrar() {
+        var numero = input_num.value
+        if (moradia[numero -1]){
+            exibir.innerHTML += `${moradia[numero -1]}`
+        } else{
+            exibir.innerHTML += `Você ainda não morou num ${bairro} bairro!`
+        }
+    }
+
+</script>
