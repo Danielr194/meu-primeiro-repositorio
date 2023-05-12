@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+
+        <div class="container">
+            <h2>Quiz sobre o Cs:</h2>
+            <button value="2012" onclick="seila1">2020</button>
+            <button onclick="seila2">2021</button>
+            <button onclick="seila3">2012</button>
+            <button onclick="seila4">2015</button>
+
+            
+        </div>
+        <div id="acertouErrou">
+        </div>    
+</body>
+</html>
+
+<script>
+    var q1 = {
+        numQ : 1,
+        pergunta: 'Quando foi criado o CS:GO?',
+        alternativaA: '2020',
+        alternativaB: '2012',
+        alternativaC: '2010',
+        correta: '2012'
+    };
+    function questao1(){    
+        if (seila1 == q1.correta){
+        acertouErrou.innerHTML += `Acertou`
+        }
+    }
+
+</script>
+        

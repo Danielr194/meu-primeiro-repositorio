@@ -1,0 +1,240 @@
+body{
+  background-color: #30322F;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+.header{
+  display: flex;
+  border:  50px;
+  border-bottom: 2px solid ;
+  margin-bottom: 15px ;
+  margin: auto;
+}
+.nav{
+  width: 100%;
+  display:flex ;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 25px;
+  margin-left: 165px;
+}
+
+.nav a  {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;  
+}
+.nav a:hover{
+  color:#F2A663;
+  transition: 0.5 all ;
+}
+.links {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 2rem;
+}
+
+
+
+.botoes_ld{
+  display: flex;
+  justify-content: end;
+  gap: 2rem;
+}
+
+.caixa_login{
+  display: flex;
+  border: 2px solid #F2921D;
+  border-radius: 3px;
+  background-color: #F2921D;
+  width: 65px;
+  justify-content: center;
+
+}
+
+
+/* main 1 */
+
+.main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.intro{
+  display: inline-block;
+  position: relative;
+  list-style: none;
+}
+
+.intro a{
+  position: absolute;
+  top: 450px;
+  right: 215px;
+  font-size: 20px;
+  color: white;
+  background-color: #2C3540;
+  width: 250px;
+  padding-left: 25px;
+  border-radius: 10px;
+  list-style: none; 
+  text-decoration: none;
+  color: white;
+}
+
+
+
+/* Sobre o cs */
+
+
+
+.sobre_cs{
+  display: inline-block;
+  position: relative;
+  flex-direction: row;
+  gap: 2rem;
+  color: white;
+}
+.sobre_cs p{
+  position: absolute;
+  top: 200px;
+  right: 212px;
+  font-size: 20px;
+  margin-left: 12px;
+  text-align: unset; 
+}
+.sobre_cs h3{
+  position: absolute;
+  top: 150px;
+  right: 920px;
+  font-size: 20px;
+  margin-left: 12px;
+  text-align: unset; 
+}
+
+.vitality{
+  position: absolute;
+  top: 200px;
+  right: 0px;
+  left: 780px;
+}
+
+
+
+
+/* Pagina de noticias */
+
+
+.noticias{
+  display: inline-block;
+  position: relative;
+  justify-content: space-between;
+
+}
+
+.eventos{
+  display: flex;
+  margin-right: 10px;
+  gap: 15rem;
+}
+
+.eventos h2{
+  text-align:center;
+
+}
+.caixa{
+  position: absolute;
+  top: 170px;
+  right: 25px;
+  flex-direction: column;
+  border: #2C3540 solid;
+  background-color: #2C3540;
+  justify-content: center;
+}
+
+
+.ranking{
+  position: absolute;
+  top: 170px;
+  right: 1040px;
+  border: #2C3540 solid;
+  margin-left: 10px;
+  background-color: #2C3540;
+  width: 230px; 
+  padding-left:13px ; 
+  
+}
+.ranking div{
+      display: flex;
+      gap: 3rem;
+}
+.ranking img{
+  display: flex;
+  margin-top: 20px;
+}
+.ranking h3{
+  text-align: center;
+}
+
+.ranking .navi{
+  gap: 1rem;
+}
+
+.noticias_prin{
+  display: flex;
+  position: absolute;
+  top: 50px;
+  right: 400px;
+  flex-direction: row-reverse;
+  justify-content: center;
+}
+
+.eventos{
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+
+/* ULTIMOS JOGOS */
+
+.jogos{
+  position: absolute;
+  top: 500px;
+  right: 580px;
+  justify-content: center;
+  flex-direction: row;
+}
+
+
+.ult_jogos{
+  position: absolute;
+  right: -160px;
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  gap: 3rem;
+}
+
+.ult_jogos p{
+  display: flex;
+  justify-content: center;
+}
+.z img{
+  margin-bottom: 5px;
+}
+
+
+.verde{
+  color: green;
+}
+.vermelho{
+  color: red;
+}
+/* 1- Quando foi criado o CS:GO?
+  2- Qual e o mapa mais jogado?
+  3- O CS:GO tem refencia de qual outro jogo da Valve?
+  4- 

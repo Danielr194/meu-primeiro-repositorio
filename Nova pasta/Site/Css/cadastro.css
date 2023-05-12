@@ -1,0 +1,115 @@
+body{}
+body{
+    background-color: #30322F;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+.header{
+    display: flex;
+    border:  50px;
+    border-bottom: 2px solid;
+    margin-bottom: 15px ;
+    margin: auto;
+}
+.nav{
+    width: 100%;
+    display:flex ;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 23px;
+}
+
+.nav a  {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;  
+}
+.nav a:hover{
+    color:#F2A663;
+    transition: 0.5 all ;
+ }
+ .links {
+    display: flex;
+    list-style: none;
+    gap: 8rem;
+ }
+
+
+ .main {
+    display: flex;
+    justify-content: center;
+
+}
+.intro{
+    display: inline-block;
+    position: relative;
+}
+
+.caixa{
+    display: flex;
+    width:400px;
+    position: absolute;
+    top: 180px;
+    right: 450px;
+    border: 5px solid #30322F;
+    border-radius: 20px;
+    background-color: #30322F;
+    box-shadow: 8px 5px 5px black;
+    justify-content: center;
+}
+
+.caixa h1 {
+    text-align: center;
+}
+.caixa label h4{
+    font-size: 30px;
+}
+
+.login{
+    display: flex;
+    list-style: none;
+    color: white;
+    justify-content: center;
+    margin-right: 35px;
+}
+.login a{
+    text-decoration: none;
+    color: white;
+}
+.caixa p{
+    text-align: center;
+}
+
+.caixa input{
+    width: 290px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 17px;
+    
+}
+
+.caixa label{
+    margin-left: 8px; 
+}
+
+.caixa button{
+    display: flex;
+    width: 100px;
+    margin-left: 100px;
+    font-size: 17px;
+    border-radius: 12px ;
+    background-color: #F2A663;
+    text-align: justify;
+}
+
+.conteudo select{
+    display: flex;
+    font-size: 18px;
+    justify-content: center;
+    position: absolute;
+    top: 408px;
+    right: 155px;
+    border-radius: 8px;
+}

@@ -1,0 +1,97 @@
+body{
+    background-color: #30322F;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+.header{
+    display: flex;
+    border:  50px;
+    border-bottom: 2px solid;
+    margin-bottom: 15px ;
+    margin: auto;
+}
+.nav{
+    width: 100%;
+    display:flex ;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 23px;
+}
+
+.nav a  {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;  
+}
+.nav a:hover{
+    color:#F2A663;
+    transition: 0.5 all ;
+ }
+ .links {
+    display: flex;
+    list-style: none;
+    gap: 8rem;
+ }
+
+
+ .main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.intro{
+    display: inline-block;
+    position: relative;
+}
+
+.caixa{
+    width: 260px;
+    position: absolute;
+    top: 400px;
+    right: 180px;
+    border: 5px solid #30322F;
+    border-radius: 20px;
+    background-color: #30322F;
+    box-shadow: 8px 5px 5px black;
+}
+.caixa h1 {
+    text-align: center;
+}
+.caixa label h4{
+    font-size: 30px;
+}
+
+.cadastro{
+    display: flex;
+    list-style: none;
+    color: white;
+    justify-content: center;
+    margin-right: 35px;
+}
+.cadastro a{
+    text-decoration: none;
+    color: white;
+}
+.caixa p{
+    text-align: center;
+}
+
+.caixa input{
+    width: 240px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.caixa button{
+    display: flex;
+    margin-left: 100px;
+    font-size: 17px;
+    border-radius: 12px ;
+    background-color: #F2A663;
+     
+
+
+}
