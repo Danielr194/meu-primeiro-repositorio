@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="sortear()">sortear imagem</button>
+    <div id="exibir"></div>
+    <img src="" alt="" >
+</body>
+</html>
+<script>
+    var lista_imagem =['<img src="./600px-Natus_Vincere_2021_lightmode.png" alt="" width="160px">', 
+    '<img src="./FURIA_Esports_full_lightmode.png" alt="" width="160px">', '  <img src="./Heroic_2023_allmode.png" alt="" width="160px">',
+    '<img src="./imperial.jpg" alt="" width="160px"> ','<img src="./mibr.png" alt="" width="200px">']
+    function sortear() {
+        var sortear_imagem = parseInt(Math.random() * lista_imagem.length )
+        if(  0 < lista_imagem.length){
+            exibir.innerHTML = lista_imagem[sortear_imagem]
+            retiradas =lista_imagem.splice(sortear_imagem,1)
+        }else{
+            exibir.innerHTML = `NÃO TEM MAIS IMAGENS`
+
+        }
+
+    }
+</script>
