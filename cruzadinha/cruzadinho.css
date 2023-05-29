@@ -1,0 +1,27 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .numeros {
+    font-size: 100px;
+}
+
+.container #espaco {
+    background-color: black;
+}
+
+.bloco{
+    width: 30px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.bloco input{
+    width: 30px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+}
